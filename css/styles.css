@@ -1,5 +1,5 @@
 body {
-  background: rgb(242, 237, 238);
+  background: #f4f482;
   font-family: Calibri, sans-serif;
 }
 a {
@@ -14,7 +14,8 @@ h2 {
   font-size: 28px;
 }
 select {
-  background-color: rgba(242, 237, 238, 0.2);
+  background-color: rgb(248, 247, 233);
+  border: 2px solid #f4afab;
   border-radius: 6px;
   display: block;
   font-size: 18px;
@@ -22,7 +23,7 @@ select {
   width: 100%;
 }
 .container {
-  background: white;
+  background: rgb(248, 247, 233);
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   max-width: 500px;
@@ -30,7 +31,7 @@ select {
   padding: 30px;
 }
 .city {
-  border-bottom: 1px dashed grey;
+  border-bottom: 1px dashed #f4afab;
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
