@@ -20,6 +20,17 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let berlinElement = document.querySelector("#berlin");
+  if (berlinElement) {
+    let berlinDateElement = berlinElement.querySelector(".date");
+    let berlinTimeElement = berlinElement.querySelector(".time");
+    let berlinTime = moment().tz("Europe/Berlin");
+    berlinDateElement.innerHTML = berlinTime.format("MMMM Do YYYY");
+    berlinTimeElement.innerHTML = berlinTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
@@ -36,8 +47,9 @@ function updateCity(event) {
   <h2>${cityName}</h2>
   <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
   </div>
-  <div class="time">${cityTime.format("h:mm:ss")} <small>${cityTime.format("A")}</small></div>
+  <div class="time">${cityTime.format("h:mm")} <small>${cityTime.format("A")}</small></div>
   </div>
+  <div><a href="/">Refresh</a></div>
   `;
 }
 
